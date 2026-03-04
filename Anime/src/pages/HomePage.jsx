@@ -4,7 +4,7 @@ import CharacterCard from "../components/CharacterCard";
 import SearchBar from "../components/SearchBar";
 import FilterPanel from "../components/FilterPanel";
 import ComparisonPanel from "../components/ComparisonPanel";
-import { applyAllFilters } from "../utils/filter";
+import { applyAllFilters } from "../../utils/filter";
 import { Link } from "react-router-dom";
 import styles from "./HomePage.module.css";
 

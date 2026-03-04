@@ -107,40 +107,60 @@ const characters = [
   { id: 77, name: "Ashborn", universe: "Solo Leveling", powerType: "Shadow Monarch", alignment: "Anti-Hero", stats: { strength: 100, speed: 95, intelligence: 95 } },
 
   // Black Clover
-  { id: 78, name: "Asta", universe: "Black Clover", powerType: "Anti-Magic", alignment: "Hero", stats: { strength: 92, speed: 85, intelligence: 75 } },
-  { id: 79, name: "Yuno", universe: "Black Clover", powerType: "Magic", alignment: "Hero", stats: { strength: 90, speed: 90, intelligence: 88 } },
-  { id: 80, name: "Lucius Zogratis", universe: "Black Clover", powerType: "Soul Magic", alignment: "Villain", stats: { strength: 98, speed: 92, intelligence: 95 } },
+{ id: 78, name: "Asta", universe: "Black Clover", powerType: "Anti-Magic", alignment: "Hero", stats: { strength: 92, speed: 85, intelligence: 75 } },
+{ id: 79, name: "Yuno", universe: "Black Clover", powerType: "Magic", alignment: "Hero", stats: { strength: 90, speed: 90, intelligence: 88 } },
+{ id: 80, name: "Lucius Zogratis", universe: "Black Clover", powerType: "Soul Magic", alignment: "Villain", stats: { strength: 98, speed: 92, intelligence: 95 } },
+{ id: 81, name: "Noelle Silva", universe: "Black Clover", powerType: "Water Magic", alignment: "Hero", stats: { strength: 80, speed: 82, intelligence: 85 } },
+{ id: 82, name: "Yami Sukehiro", universe: "Black Clover", powerType: "Dark Magic", alignment: "Hero", stats: { strength: 94, speed: 88, intelligence: 80 } },
 
-  // Tokyo Ghoul
-  { id: 81, name: "Ken Kaneki", universe: "Tokyo Ghoul", powerType: "Ghoul", alignment: "Anti-Hero", stats: { strength: 92, speed: 90, intelligence: 88 } },
-  { id: 82, name: "Kishou Arima", universe: "Tokyo Ghoul", powerType: "CCG Combat", alignment: "Hero", stats: { strength: 95, speed: 93, intelligence: 92 } },
+// Tokyo Ghoul
+{ id: 83, name: "Ken Kaneki", universe: "Tokyo Ghoul", powerType: "Ghoul", alignment: "Anti-Hero", stats: { strength: 92, speed: 90, intelligence: 88 } },
+{ id: 84, name: "Kishou Arima", universe: "Tokyo Ghoul", powerType: "CCG Combat", alignment: "Hero", stats: { strength: 95, speed: 93, intelligence: 92 } },
+{ id: 85, name: "Touka Kirishima", universe: "Tokyo Ghoul", powerType: "Ghoul", alignment: "Hero", stats: { strength: 85, speed: 88, intelligence: 80 } },
+{ id: 86, name: "Eto Yoshimura", universe: "Tokyo Ghoul", powerType: "One-Eyed Ghoul", alignment: "Villain", stats: { strength: 96, speed: 90, intelligence: 93 } },
 
-  // JoJo's Bizarre Adventure
-  { id: 83, name: "Jotaro Kujo", universe: "JoJo's Bizarre Adventure", powerType: "Stand", alignment: "Hero", stats: { strength: 95, speed: 93, intelligence: 90 } },
-  { id: 84, name: "Dio Brando", universe: "JoJo's Bizarre Adventure", powerType: "Stand", alignment: "Villain", stats: { strength: 97, speed: 95, intelligence: 92 } },
+// JoJo's Bizarre Adventure
+{ id: 87, name: "Jotaro Kujo", universe: "JoJo's Bizarre Adventure", powerType: "Stand", alignment: "Hero", stats: { strength: 95, speed: 93, intelligence: 90 } },
+{ id: 88, name: "Dio Brando", universe: "JoJo's Bizarre Adventure", powerType: "Stand", alignment: "Villain", stats: { strength: 97, speed: 95, intelligence: 92 } },
+{ id: 89, name: "Joseph Joestar", universe: "JoJo's Bizarre Adventure", powerType: "Hammon", alignment: "Hero", stats: { strength: 85, speed: 88, intelligence: 95 } },
+{ id: 90, name: "Kira Yoshikage", universe: "JoJo's Bizarre Adventure", powerType: "Stand", alignment: "Villain", stats: { strength: 80, speed: 83, intelligence: 94 } },
 
-  // Code Geass
-  { id: 85, name: "Lelouch Lamperouge", universe: "Code Geass", powerType: "Geass", alignment: "Anti-Hero", stats: { strength: 70, speed: 75, intelligence: 100 } },
+// Code Geass
+{ id: 91, name: "Lelouch Lamperouge", universe: "Code Geass", powerType: "Geass", alignment: "Anti-Hero", stats: { strength: 70, speed: 75, intelligence: 100 } },
+{ id: 92, name: "Suzaku Kururugi", universe: "Code Geass", powerType: "Knightmare Pilot", alignment: "Hero", stats: { strength: 85, speed: 80, intelligence: 82 } },
+{ id: 93, name: "C.C.", universe: "Code Geass", powerType: "Immortality/Geass Support", alignment: "Neutral", stats: { strength: 60, speed: 70, intelligence: 95 } },
 
-  // One Punch Man
-  { id: 86, name: "Saitama", universe: "One Punch Man", powerType: "Limitless Strength", alignment: "Hero", stats: { strength: 100, speed: 100, intelligence: 75 } },
-  { id: 87, name: "Genos", universe: "One Punch Man", powerType: "Cyborg", alignment: "Hero", stats: { strength: 90, speed: 88, intelligence: 85 } },
+// One Punch Man
+{ id: 94, name: "Saitama", universe: "One Punch Man", powerType: "Limitless Strength", alignment: "Hero", stats: { strength: 100, speed: 100, intelligence: 75 } },
+{ id: 95, name: "Genos", universe: "One Punch Man", powerType: "Cyborg", alignment: "Hero", stats: { strength: 90, speed: 88, intelligence: 85 } },
+{ id: 96, name: "Garou", universe: "One Punch Man", powerType: "Martial Arts", alignment: "Anti-Hero", stats: { strength: 95, speed: 92, intelligence: 80 } },
+{ id: 97, name: "Boros", universe: "One Punch Man", powerType: "Alien Strength", alignment: "Villain", stats: { strength: 98, speed: 95, intelligence: 85 } },
 
-  // Death Note
-  { id: 88, name: "Light Yagami", universe: "Death Note", powerType: "Death Note", alignment: "Villain", stats: { strength: 65, speed: 70, intelligence: 100 } },
-  { id: 89, name: "L Lawliet", universe: "Death Note", powerType: "Detective Genius", alignment: "Hero", stats: { strength: 60, speed: 65, intelligence: 100 } },
+// Death Note
+{ id: 98, name: "Light Yagami", universe: "Death Note", powerType: "Death Note", alignment: "Villain", stats: { strength: 65, speed: 70, intelligence: 100 } },
+{ id: 99, name: "L Lawliet", universe: "Death Note", powerType: "Detective Genius", alignment: "Hero", stats: { strength: 60, speed: 65, intelligence: 100 } },
+{ id: 100, name: "Near", universe: "Death Note", powerType: "Detective Genius", alignment: "Hero", stats: { strength: 55, speed: 60, intelligence: 98 } },
+{ id: 101, name: "Mello", universe: "Death Note", powerType: "Detective/Combat", alignment: "Anti-Hero", stats: { strength: 70, speed: 75, intelligence: 92 } },
 
-  // Blue Exorcist
-  { id: 90, name: "Rin Okumura", universe: "Blue Exorcist", powerType: "Demon Flames", alignment: "Hero", stats: { strength: 88, speed: 85, intelligence: 78 } },
+// Blue Exorcist
+{ id: 102, name: "Rin Okumura", universe: "Blue Exorcist", powerType: "Demon Flames", alignment: "Hero", stats: { strength: 88, speed: 85, intelligence: 78 } },
+{ id: 103, name: "Yukio Okumura", universe: "Blue Exorcist", powerType: "Gun & Magic", alignment: "Hero", stats: { strength: 80, speed: 82, intelligence: 88 } },
+{ id: 104, name: "Amaimon", universe: "Blue Exorcist", powerType: "Demon", alignment: "Villain", stats: { strength: 90, speed: 88, intelligence: 75 } },
 
-  // Fate
-  { id: 91, name: "Gilgamesh", universe: "Fate", powerType: "Gate of Babylon", alignment: "Anti-Hero", stats: { strength: 97, speed: 90, intelligence: 95 } },
+// Fate
+{ id: 105, name: "Gilgamesh", universe: "Fate", powerType: "Gate of Babylon", alignment: "Anti-Hero", stats: { strength: 97, speed: 90, intelligence: 95 } },
+{ id: 106, name: "Artoria Pendragon", universe: "Fate", powerType: "Excalibur", alignment: "Hero", stats: { strength: 95, speed: 88, intelligence: 90 } },
+{ id: 107, name: "EMIYA", universe: "Fate", powerType: "Projection Magecraft", alignment: "Anti-Hero", stats: { strength: 85, speed: 85, intelligence: 90 } },
 
-  // Yu Yu Hakusho
-  { id: 92, name: "Yusuke Urameshi", universe: "Yu Yu Hakusho", powerType: "Spirit Energy", alignment: "Hero", stats: { strength: 92, speed: 88, intelligence: 80 } },
+// Yu Yu Hakusho
+{ id: 108, name: "Yusuke Urameshi", universe: "Yu Yu Hakusho", powerType: "Spirit Energy", alignment: "Hero", stats: { strength: 92, speed: 88, intelligence: 80 } },
+{ id: 109, name: "Hiei", universe: "Yu Yu Hakusho", powerType: "Fire & Speed", alignment: "Anti-Hero", stats: { strength: 88, speed: 95, intelligence: 82 } },
+{ id: 110, name: "Kurama", universe: "Yu Yu Hakusho", powerType: "Plant Manipulation", alignment: "Hero", stats: { strength: 85, speed: 85, intelligence: 95 } },
 
-  // Mob Psycho 100
-  { id: 93, name: "Shigeo Kageyama", universe: "Mob Psycho 100", powerType: "Psychic", alignment: "Hero", stats: { strength: 95, speed: 85, intelligence: 85 } },
+// Mob Psycho 100
+{ id: 111, name: "Shigeo Kageyama", universe: "Mob Psycho 100", powerType: "Psychic", alignment: "Hero", stats: { strength: 95, speed: 85, intelligence: 85 } },
+{ id: 112, name: "Ritsu Kageyama", universe: "Mob Psycho 100", powerType: "Psychic", alignment: "Hero", stats: { strength: 75, speed: 78, intelligence: 82 } },
+{ id: 113, name: "Teruki Hanazawa", universe: "Mob Psycho 100", powerType: "Psychic", alignment: "Hero", stats: { strength: 88, speed: 85, intelligence: 80 } },
 ];
 
 export default characters;

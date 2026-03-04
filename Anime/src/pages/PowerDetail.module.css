@@ -23,3 +23,11 @@
   background: #6b7280;
   transform: scale(1.05);
 }
+
+.tier {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}

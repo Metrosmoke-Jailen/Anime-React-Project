@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { calculateOverallScore } from "../utils/filter";
+import { calculateOverallScore } from "../../utils/filter";
 import styles from "./CharacterCard.module.css";
 
 function CharacterCard({

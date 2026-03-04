@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import characters from "../data/characters";
-import { calculateOverallScore } from "../utils/filter";
+import { calculateOverallScore } from "../../utils/filter";
 import styles from "./CharacterPage.module.css";
 
 function CharacterPage({ darkMode }) {

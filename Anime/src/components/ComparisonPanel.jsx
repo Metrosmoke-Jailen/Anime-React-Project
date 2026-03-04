@@ -1,5 +1,5 @@
 import React from "react";
-import { calculateOverallScore } from "../utils/filter";
+import { calculateOverallScore } from "../../utils/filter";
 import styles from "./ComparisonPanel.module.css";
 
 function ComparisonPanel({ character1, character2, votes, darkMode }) {
