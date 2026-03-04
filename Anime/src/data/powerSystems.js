@@ -1,8 +1,9 @@
-import characters from "./characters"; // make sure path is correct
+import characters from "./characters";
+import powerSystemDefinitions from "./powerSystemDefinitions";
 
-// Get unique power types from characters
+// Get unique power types
 const uniquePowerTypes = [
-  ...new Set(characters.map((c) => c.powerType))
+  ...new Set(characters.map((c) => c.powerType)),
 ];
 
 export const powerSystems = uniquePowerTypes.map((powerType) => {
@@ -11,25 +12,51 @@ export const powerSystems = uniquePowerTypes.map((powerType) => {
   const avgStats = users.length
     ? {
         strength: Math.round(
-          users.reduce((sum, c) => sum + c.stats.strength, 0) / users.length
+          users.reduce((sum, c) => sum + c.stats.strength, 0) /
+            users.length
         ),
         speed: Math.round(
-          users.reduce((sum, c) => sum + c.stats.speed, 0) / users.length
+          users.reduce((sum, c) => sum + c.stats.speed, 0) /
+            users.length
         ),
         intelligence: Math.round(
-          users.reduce((sum, c) => sum + c.stats.intelligence, 0) / users.length
+          users.reduce((sum, c) => sum + c.stats.intelligence, 0) /
+            users.length
         ),
       }
     : { strength: 0, speed: 0, intelligence: 0 };
 
+  const definition = powerSystemDefinitions[powerType];
+
   return {
     id: powerType.toLowerCase().replace(/\s+/g, "-"),
     name: powerType,
-    rules: `${powerType} is powered by its users.`,
-    strengths: "Excels in combat depending on users.",
-    weaknesses: "Limited by opponents and environment.",
+
+    type: definition?.type || powerType.toLowerCase(),
+
+    stats: {
+      ...(definition?.stats || {
+        strength: avgStats.strength,
+        versatility: 70,
+        complexity: 70,
+        scalability: 70,
+      }),
+      avgCharacterStats: avgStats,
+    },
+
+    rules:
+      definition?.rules || [
+        {
+          title: "Undefined System",
+          description: `${powerType} has no encyclopedia entry yet.`,
+          consequence: "Add it to powerSystemDefinitions.js",
+        },
+      ],
+
+    strengths: definition?.strengths || ["No data yet"],
+    weaknesses: definition?.weaknesses || ["No data yet"],
+    comparison: definition?.comparison || {},
+
     notableUsers: users.map((u) => u.name),
-    comparison: `${powerType} compared to other power types.`,
-    avgStats,
   };
 });
